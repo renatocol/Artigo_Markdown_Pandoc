@@ -1,5 +1,10 @@
 ## Guia para edição de artigo acadêmico com Markdown, Pandoc, LaTeX e Zotero
 
+### Autor: Renato Perim Colistete, FEA-USP
+
+*Última atualização: 14/7/2021*
+
+
 Este guia apresenta os passos básicos para a preparação de artigos acadêmicos utilizando [Markdown](https://en.wikipedia.org/wiki/Markdown), uma sintaxe simples e versátil de formatação de textos com amplo uso em webpages, editores de programação, GitHub/GitLab e Jupyter Notebook. Por meio do [pandoc](https://pandoc.org/MANUAL.html), o texto básico em Markdown poderá ser convertido em pdf na formatação do [LaTeX](https://www.latex-project.org/) com todas suas funcionalidades, além de outros formatos como odt e docx. O workflow é integrado com o gerenciador de bibliotecas [Zotero](https://www.zotero.org/).
 
 #### Instalações necessárias
@@ -33,7 +38,7 @@ Dois bons guias gerais sobre Markdown são [Aprenda Markdown](https://blog.da2k.
 O plugin [Better BibTeX for Zotero](https://retorque.re/zotero-better-bibtex/) permite integrar o texto Markdown com Zotero por meio de uma "citation key" que é gerada para cada item da bibliografia com o formato @authortitleyear (p. ex., @canabravaAcucarNasAntilhas1981). Os passos a seguir baseiam-se no [tutorial de Simon Lindgren](https://www.simonlindgren.com/notes/2019/11/15/setup-for-writing-in-markdown-citing-with-zotero-and-publishing-with-pandoc):
 
 - Abrir o Zotero.
-- Para o exemplo a seguir, faça primeiro o download do arquivo biblio.bib que se encontra nesta página do Github, na pasta "biblio" acima. Crie um diretório em seu computador e salve biblio.bib nele. Para facilitar, nomeie este diretório no seu computador de "artigo", que será o nome que utlizaremos ao longo deste tutorial.
+- Para o exemplo a seguir, faça primeiro o download do arquivo biblio.bib que se encontra na pasta "bibliografia", nesta página do GitHub. Crie um diretório em seu computador e salve biblio.bib nele. Para facilitar, nomeie este diretório no seu computador de "artigo", que será o nome que utlizaremos ao longo deste tutorial.
 - Faça o download do ZoteroBetterBibTeX em https://github.com/retorquere/zotero-better-bibtex/releases/
 - Para executar o download do ZoteroBetterBibTeX, clique o botão direito do mouse no arquivo xpi da última versão do pacote e salve em algum diretório temporário.
 - Instale o arquivo xpi no Zotero: Ferramentas >> Extensões >> clique na janela no alto à direita >> Install Add-on from file. Localize o arquivo xpi salvo no seu diretório temporário e o carregue.
@@ -88,7 +93,7 @@ $(3)$ $\frac{\frac{1}{x}+\frac{1}{y}}{y-z}$
 
 O próximo passo é converter o arquivo paper1.md para pdf ou odt/docx. O código do pandoc é simples (pandoc test.md -o test.pdf), sendo executado no terminal de seu computador (geralmente após o símbolo $).
 
-Para incluir as citações bibliográficas e adicionar a bibliografia final é preciso incluir ainda --citeproc e --bibliography, seguidos do arquivo .bib utilizado. Alternativamente, o elemento --bibliography pode ser incluído nos metadados da seção YAML (bibliography: biblio.bib). Neste tutorial usaremos --bibliography no comando de linha. Para os detalhes, consultar a documentação do pandoc para [criação de pdf](https://pandoc.org/MANUAL.html#creating-a-pdf) e [outros formatos](https://pandoc.org/MANUAL.html#general-options). Como ilustração, a sequência seguinte converte o arquivo paper1.md para pdf e docx:
+Para adicionar as citações bibliográficas e a bibliografia final é preciso incluir ainda --citeproc e --bibliography, seguidos do arquivo .bib utilizado. Alternativamente, o elemento --bibliography pode ser incluído nos metadados da seção YAML (bibliography: biblio.bib). Neste guia usaremos --bibliography no comando de linha. Para os detalhes, consultar a documentação do pandoc para [criação de pdf](https://pandoc.org/MANUAL.html#creating-a-pdf) e [outros formatos](https://pandoc.org/MANUAL.html#general-options). Como ilustração, a sequência seguinte converte o arquivo paper1.md para pdf e docx:
 
 - No terminal de seu computador, use $ cd ... para ir ao diretório "artigo", onde o arquivo paper1.md e biblio.bib foram salvos.
 
@@ -102,13 +107,13 @@ Para incluir as citações bibliográficas e adicionar a bibliografia final é p
 
   $ pandoc paper1.md --citeproc --bibliography biblio.bib -o paper1.docx
 
-- Verifique o arquivo paper1.pdf no seu diretório "artigo". Caso as instalações dos programas necessários estiverem em ordem, o arquivo em pdf terá a estrutura do Markdown copiado e colado na seção anterior, tal como o que se encontra no diretório [xxx] nesta página do GitHub (ver paper1.pdf).
+- Verifique o arquivo paper1.pdf no seu diretório "artigo". Caso as instalações dos programas necessários estiverem em ordem, o arquivo em pdf terá a estrutura do Markdown copiado e colado na seção anterior, tal como o que se encontra na pasta "exemplos" deste guia no GitHub (ver paper1.pdf).
 
 - É mais prático manter o arquivo .bib (aqui, biblio.bib) em uma pasta separada dentro do diretório "artigo" que contém o arquivo Markdown. Para isso, crie uma nova pasta (p.ex. com o nome ref) dentro do diretório "artigo" e transfira biblio.bib para ela. O código no terminal agora deve incluir uma barra após ref (isto é, ref/): 
 
   $ pandoc paper1.md --citeproc --bibliography ref/biblio.bib -o paper1.pdf 
 
-- Como exemplo adicional, selecione e copie texto abaixo (inclusive "---" no início e no final do arquivo YAML) e cole em um arquivo em branco do Typora ou outro editor Markdown (lembrando: se usar Typora, mude primeiro para "Source code mode" em "View" para então selecionar e copiar o texto). Salve este arquivo no mesmo diretório "artigo" como paper2.md:
+- Como exemplo adicional, selecione e copie o texto abaixo (inclusive "---" no início e no final do arquivo YAML) e cole em um arquivo em branco do Typora ou outro editor Markdown (lembrando: se usar Typora, mude primeiro para "Source code mode" em "View" para então selecionar e copiar o texto). Salve este arquivo no mesmo diretório "artigo" como paper2.md:
 
 ```markdown
 ---
@@ -134,7 +139,7 @@ Anyone who claimed to have the means and desire to make use of the land was give
 
 Além do default do pandoc, outros estilos de citação podem ser definidos facilmente utilizando o repositório de CSL (Citation Style Language) do Zotero. Vários periódicos possuem CSL pronto para ser utilizado, como pode ser visto em https://www.zotero.org/styles.
 
-- Faça o download do arquivo .csl desejado e salve na pasta ref, ao lado do arquivo biblio.bib. Nos exemplos a seguir, serão utilizados os estilos de duas revistas, Explorations in Economic History e Hispanic American Historical Review. 
+- Faça o download neste site (https://www.zotero.org/styles) do arquivo .csl desejado e salve na pasta ref, ao lado do arquivo biblio.bib. Nos exemplos a seguir, serão utilizados os estilos de duas revistas, Explorations in Economic History e Hispanic American Historical Review. Os dois arquivos .csl também estão disponíveis na pasta "csl" no GitHub.
 
 - No terminal, complemente o código anterior com --csl ref/[...].csl, onde [...] é o nome/CSL do periódico. Utilizando o arquivo paper2 execute os dois códigos, alternadamente:
 
@@ -164,7 +169,7 @@ title: Latifundia and Land Policy in Nineteenth-Century Brazil
 author: |
   | Warren Dean
   | University of New York
-  | email address
+  | address
 date: 1 November 1971
 thanks: "I thank to..."
 abstract: "This paper examines..."
@@ -234,7 +239,7 @@ A Lithuanian acquired 26 hectares in 1931 with an outlay of 200 mil-réis, with 
   ![Wheat harvest in Barão de Antonina](fig_monbeig2.png)
   ```
 
-- Baixe as duas figuras disponíveis no diretório [xxx] desta página do GitHub e salve na sua pasta "artigo", como nas vezes anteriores. Copie o cole o código abaixo no terminal e confira o resultado:
+- Baixe as duas figuras disponíveis na pasta "figuras" deste guia no GitHub e salve na sua pasta "artigo", como nas vezes anteriores. Copie o cole o código abaixo no terminal e confira o resultado:
 
   $ pandoc paper3.md --citeproc --bibliography ref/biblio.bib --csl ref/hispanic-american-historical-review.csl  -o paper3.pdf
 
@@ -562,4 +567,4 @@ header-includes: |
 
 #### Concluindo
 
-Em resumo, o uso de Markdown combinado com Pandoc, Zotero e LaTeX é uma opção viável, prática e consistente para edição de artigos e outros trabalhos acadêmicos, constituindo uma alternativa robusta para editores como Overleaf/LaTeX. 
+Em resumo, o uso de Markdown combinado com Pandoc, Zotero e LaTeX é uma opção viável, prática e consistente para edição de artigos e outros trabalhos acadêmicos, constituindo uma alternativa robusta ao uso de editores como Overleaf/LaTeX. 
