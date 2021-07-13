@@ -1,6 +1,6 @@
 ## Guia para edição de artigo acadêmico com Markdown, Pandoc, LaTeX e Zotero
 
-#### Autor: Renato Perim Colistete, FEA-USP
+### Autor: Renato Perim Colistete, FEA-USP
 
 *Última atualização: 14/7/2021*
 
@@ -332,7 +332,7 @@ A Lithuanian acquired 26 hectares in 1931 with an outlay of 200 mil-réis, with 
 
 - Esta é uma típica tabela com a sintaxe do LaTeX. O texto Markdown com a tabela ficará assim:
 
-  ```latex
+  ```markdown
   ---
     title: Neither Slave nor Free. The Emancipados of Brazil, 1818-1868
     author: |
@@ -404,7 +404,7 @@ header-includes: |
 
 - Copie e cole header-includes: | e os pacotes na seção do YAML e substitua a tabela anterior com a formatada com tabulary no arquivo paper4.md, como indicado abaixo (ou simplesmente copie e cole todo o texto):
 
-```latex
+```markdown
 ---
   title: Neither Slave nor Free. The Emancipados of Brazil, 1818-1868
   author: |
@@ -458,7 +458,7 @@ $ pandoc paper4.md --citeproc --bibliography ref/biblio.bib --csl ref/hispanic-a
 #### Outros elementos dos metadados
 
 - Os metadados da seção YAML admitem outras opções para a formatação final do documento em LaTeX, tais como documentclass, papersize e geometry. Ver abaixo:
-```latex
+```markdown
 ---
 title: Neither Slave nor Free. The Emancipados of Brazil, 1818-1868
 author: |
