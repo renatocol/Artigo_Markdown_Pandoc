@@ -1,2 +1,2 @@
 # Artigo_Markdown
-Edição de artigo acadêmico em Markdown
+ Guia para edição de artigo acadêmico com Markdown, Pandoc, LaTeX e Zotero
