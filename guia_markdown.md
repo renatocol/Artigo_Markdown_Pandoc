@@ -1,6 +1,6 @@
 ## Guia para edição de artigo acadêmico com Markdown, Pandoc, LaTeX e Zotero
 
-### Autor: Renato Perim Colistete, FEA-USP
+#### Autor: Renato Perim Colistete, FEA-USP
 
 *Última atualização: 14/7/2021*
 
