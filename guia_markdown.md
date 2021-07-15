@@ -9,7 +9,7 @@ Este guia apresenta os passos básicos para a preparação de artigos acadêmico
 
 #### Instalações necessárias
 
-Requer-se a instalação prévia de quatro programas: um editor Markdown, o gerenciador de bibliografia Zotero, o sistema de preparação de documentos LaTeX e o módulo de conversão de documentos, pandoc. Toda a apresentação a seguir utiliza o [Typora](https://typora.io/), um editor de Markdown robusto, que conta com vários recursos e funcionalidades para a redação de trabalhos acadêmicos. Recomenda-se que os programas sejam instalados em um ambiente virtual próprio, a ser criado, por exemplo, com [venv](https://docs.python.org/pt-br/3/library/venv.html#module-venv) (Python) ou [conda](https://docs.conda.io/en/latest/) (Anaconda). 
+Requer-se a instalação prévia de quatro programas: um editor Markdown, o gerenciador de bibliografia Zotero, o sistema de preparação de documentos LaTeX e o módulo de conversão de documentos, pandoc. Toda a apresentação a seguir utiliza o [Typora](https://typora.io/), um ótimo editor de Markdown, que conta com vários recursos e funcionalidades para a redação de trabalhos acadêmicos. Recomenda-se que os programas sejam instalados em um ambiente virtual próprio, a ser criado, por exemplo, com [venv](https://docs.python.org/pt-br/3/library/venv.html#module-venv) (Python) ou [conda](https://docs.conda.io/en/latest/) (Anaconda). 
 
 - *LaTeX*
 
@@ -27,7 +27,7 @@ Requer-se a instalação prévia de quatro programas: um editor Markdown, o gere
 
   Instalar Zotero e o Zotero Connector para navegador Firefox ou Chrome/Chromium: https://www.zotero.org/download/
 
-- Anaconda
+- *Anaconda*
 
   Instalar de acordo com as instruções: https://docs.anaconda.com/anaconda/installMarkdown
 
