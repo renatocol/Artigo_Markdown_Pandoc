@@ -404,7 +404,7 @@ header-includes: |
 
 - Copie e cole header-includes: | e os pacotes na seção do YAML e substitua a tabela anterior com a formatada com tabulary no arquivo paper4.md, como indicado abaixo (ou simplesmente copie e cole todo o texto):
 
-```yaml
+```latex
 ---
   title: Neither Slave nor Free. The Emancipados of Brazil, 1818-1868
   author: |
