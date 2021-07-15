@@ -5,7 +5,7 @@
 *Última atualização: 14/7/2021*
 
 
-Este guia apresenta os passos básicos para a preparação de artigos acadêmicos utilizando [Markdown](https://en.wikipedia.org/wiki/Markdown), uma sintaxe simples e versátil de formatação de textos com amplo uso em webpages, editores de programação, GitHub/GitLab e Jupyter Notebook. Por meio do [pandoc](https://pandoc.org/MANUAL.html), o texto básico em Markdown poderá ser convertido em pdf na formatação do [LaTeX](https://www.latex-project.org/) com todas suas funcionalidades, além de outros formatos como odt e docx. O workflow é integrado com o gerenciador de bibliotecas [Zotero](https://www.zotero.org/).
+Este guia apresenta os passos básicos para a preparação de artigos acadêmicos utilizando [Markdown](https://en.wikipedia.org/wiki/Markdown), uma sintaxe simples e versátil de formatação de textos com amplo uso em webpages, editores de programação, GitHub/GitLab e Jupyter Notebook. Por meio do [pandoc](https://pandoc.org/MANUAL.html), o texto básico em Markdown é convertido em pdf na formatação do [LaTeX](https://www.latex-project.org/) com todas suas funcionalidades, além de outros formatos como odt e docx. O workflow é integrado com o gerenciador de bibliotecas [Zotero](https://www.zotero.org/).
 
 #### Instalações necessárias
 
@@ -404,7 +404,7 @@ header-includes: |
 
 - Copie e cole header-includes: | e os pacotes na seção do YAML e substitua a tabela anterior com a formatada com tabulary no arquivo paper4.md, como indicado abaixo (ou simplesmente copie e cole todo o texto):
 
-```markdown
+```yaml
 ---
   title: Neither Slave nor Free. The Emancipados of Brazil, 1818-1868
   author: |
