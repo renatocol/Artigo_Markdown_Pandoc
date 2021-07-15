@@ -404,7 +404,7 @@ header-includes: |
 
 - Copie e cole header-includes: | e os pacotes na seção do YAML e substitua a tabela anterior com a formatada com tabulary no arquivo paper4.md, como indicado abaixo (ou simplesmente copie e cole todo o texto):
 
-```latex
+```markdown
 ---
   title: Neither Slave nor Free. The Emancipados of Brazil, 1818-1868
   author: |
@@ -526,7 +526,6 @@ author: |
   | University of São Paulo
   | rcolistete@usp.br
 date: 15 April 2021
-thanks: ""
 abstract: "This paper examines the skills of enslaved labour during the second half of the nineteenth century in the province of São Paulo. The analysis is based on data from 3,376 individuals collected in advertisements of runaway slaves published by São Paulo newspapers between 1854 and 1887. As only a small part of the announcements listed runaways' occupations, we draw on individual details on sex, age, ethnicity, residence, physical characteristics and other features of fugitives with advertised occupations to predict the skills of the remaining subset of runaways, using classification algorithms from machine learning. Overall, both observed and predicted skilled runaways converged in their characteristics: skilled runaways were mostly male, older than their low-skilled counterparts and predominantly from farms and plantations, rather than urban settings. Africans were not at a disadvantage in artisanal jobs when compared with Brazilian-born runaways, and the skill gap between mixed-race and black fugitives was negligible. Although the enslaved population suffered from very low levels of literacy, the few runaways with an ability to read or write tended to work in more qualified and artisanal occupations, indicating that education may have been valuable even under the appalling conditions of slavery. These results are important both for the analysis of slavery in Brazil and comparisons with other plantation societies in the Americas."
 bibliography: bib_ref.bib
 documentclass: article
