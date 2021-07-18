@@ -5,7 +5,7 @@
 *Última atualização: 14/7/2021*
 
 
-Este guia apresenta os passos básicos para a preparação de artigos acadêmicos utilizando [Markdown](https://en.wikipedia.org/wiki/Markdown), uma sintaxe simples e versátil de formatação de textos com amplo uso em webpages, editores de programação, GitHub/GitLab e Jupyter Notebook. Por meio do [pandoc](https://pandoc.org/MANUAL.html), o texto básico em Markdown é convertido em pdf na formatação do [LaTeX](https://www.latex-project.org/) com todas suas funcionalidades, além de outros formatos como odt e docx. O workflow é integrado com o gerenciador de bibliotecas [Zotero](https://www.zotero.org/).
+Este guia apresenta os passos básicos para a preparação de artigos acadêmicos utilizando [Markdown](https://en.wikipedia.org/wiki/Markdown), uma sintaxe simples e versátil de formatação de textos com amplo uso em webpages, editores de programação, GitHub/GitLab e Jupyter Notebook. Por meio do [pandoc](https://pandoc.org/MANUAL.html), o texto básico em Markdown é convertido em pdf na formatação do [LaTeX](https://www.latex-project.org/) com todas suas funcionalidades, além de outros formatos como odt e docx. O workflow é integrado com o gerenciador de bibliotecas [Zotero](https://www.zotero.org/). O sistema é uma alternativa tanto para quem usa Word na área de humanas quanto para os que utilizam LaTeX em editores como Overleaf. 
 
 #### Instalações necessárias
 
@@ -33,12 +33,12 @@ Requer-se a instalação prévia de quatro programas: um editor Markdown, o gere
 
 Dois bons guias gerais sobre Markdown são [Aprenda Markdown](https://blog.da2k.com.br/2015/02/08/aprenda-markdown/) e [Markdown-Guide](https://markdown-guide.readthedocs.io/en/latest/basics.html#). O Typora, editor usado neste tutorial, baseia-se em uma das variantes (flavors) do Markdown puro, o [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/). O [Markdown Reference](https://support.typora.io/Markdown-Reference/) do Typora contém todos os detalhes da sintaxe e é também um bom guia geral da linguagem. Para o Zotero, ver [Quick Start Guide](https://www.zotero.org/support/pt/quick_start_guide) e [Tutorial Zotero 5.0](https://www.iel.unicamp.br/arquivos/biblioteca/TUTORIAL_zotero_v1.pdf).
 
-#### Instalação da biblioteca ZoteroBetterBibTeX no Zotero
+##### Instalação da biblioteca ZoteroBetterBibTeX no Zotero
 
 O plugin [Better BibTeX for Zotero](https://retorque.re/zotero-better-bibtex/) permite integrar o texto Markdown com Zotero por meio de uma "citation key" que é gerada para cada item da bibliografia com o formato @authortitleyear (p. ex., @canabravaAcucarNasAntilhas1981). Os passos a seguir baseiam-se no [tutorial de Simon Lindgren](https://www.simonlindgren.com/notes/2019/11/15/setup-for-writing-in-markdown-citing-with-zotero-and-publishing-with-pandoc):
 
 - Abrir o Zotero.
-- Para o exemplo a seguir, faça primeiro o download do arquivo biblio.bib que se encontra na pasta "bibliografia", nesta página do GitHub. Crie um diretório em seu computador e salve biblio.bib nele. Para facilitar, nomeie este diretório no seu computador de "artigo", que será o nome que utlizaremos ao longo deste tutorial.
+- Para este tutorial, faça primeiro o download do arquivo biblio.bib que se encontra na pasta "bibliografia", nesta página do GitHub. Crie um diretório em seu computador e salve biblio.bib nele. Para facilitar, nomeie este diretório no seu computador como "artigo", que será o nome que utlizaremos ao longo deste tutorial.
 - Faça o download do ZoteroBetterBibTeX em https://github.com/retorquere/zotero-better-bibtex/releases/
 - Para executar o download do ZoteroBetterBibTeX, clique o botão direito do mouse no arquivo xpi da última versão do pacote e salve em algum diretório temporário.
 - Instale o arquivo xpi no Zotero: Ferramentas >> Extensões >> clique na janela no alto à direita >> Install Add-on from file. Localize o arquivo xpi salvo no seu diretório temporário e o carregue.
@@ -52,8 +52,8 @@ O plugin [Better BibTeX for Zotero](https://retorque.re/zotero-better-bibtex/) p
 A estrutura básica do artigo acadêmico a ser editado é composta por um bloco de metadados [YAML](https://support.typora.io/YAML/) no cabeçalho, seções e bibliografia ao final (notar que o bloco YAML começa com --- e termina com --- ). Um primeiro exemplo é apresentado a seguir. 
 
 - Selecione, copie e cole toda a estrutura do texto abaixo (inclusive "---" no início e no final dos metadados YAML) em um arquivo em branco do Typora ou outro editor Markdown.
-- Se estiver utilizando Typora, mude primeiro para "Source code mode" em "View" para então selecionar e copiar o texto.  
-- Em seguida, salve este arquivo com o formato [nome].md no diretório "artigo". Chamaremos este arquivo Markdown de paper1.md.
+- Se estiver utilizando o Typora, mude primeiro para "Source code mode" em "View" para então selecionar e copiar o texto.  
+- Em seguida, salve este arquivo com o formato [nome].md no diretório "artigo". Aqui, chamaremos este arquivo Markdown de paper1.md.
 
 ```markdown
 ---
@@ -122,7 +122,7 @@ author: Warren Dean
 date: 1 November 1971
 ---
 
-[This is an extract of the original article]
+[This is an extract from the original article]
 
 Anyone who claimed to have the means and desire to make use of the land was given a grant, customarily one to three leagues in extent (16.7 to 50.1 square miles). The royal grants, called sesmarias, were clearly not homesteads; a labor force would have to be introduced to carry out the manual labor. This was difficult for Portugal to provide. Anyone with the necessary 300 to 400 milreis (375 to 500 U.S. dollars of i8oo) to pay for the formalities could obtain a sesmaria. Any immigrant who lacked that amount could squat on unclaimed crown lands. This was illegal, and therefore precarious, but it was seldom punished or even noticed unless another person later acquired a grant over the squatter's land. Some Portuguese did remain on the sesmarias of others as tenants of a sort, but because they had the alternative of squatting, the landowner could not demand much steady labor from them. Hence the introduction of slave labor, first Indian, then African. The latifundium, slavery, and the export trade remained, as the historian, Caio Prado, Jr. has said, for more than three hundred years the principal institutions of Brazilian society.[^1]
 
@@ -161,7 +161,7 @@ author: |
    | institution
 ```
 
-- O exemplo abaixo acrescenta outras informações do autor e inclui mais itens dos metadados do bloco YAML (thanks: e abstract:):
+- O exemplo abaixo acrescenta outras informações do autor e inclui mais itens dos metadados do bloco YAML (thanks e abstract):
 
 ```yaml
 ---
@@ -231,7 +231,7 @@ A Lithuanian acquired 26 hectares in 1931 with an outlay of 200 mil-réis, with 
 ## References
 ```
 
-- Note que no meio do texto (paper3.md) há duas figuras (fig_monbeig1.png e fig_monbeig2.png) com seus respectivos títulos, conforme a formatação em Markdown citada acima:
+- Note que no meio do texto de paper3.md há duas figuras (fig_monbeig1.png e fig_monbeig2.png) com seus respectivos títulos, conforme a formatação em Markdown citada acima:
 
   ```markdown
   ![Ilustrations of the mixture of nationalities at Barão de Antonina.](fig_monbeig1.png)
@@ -279,7 +279,7 @@ A Lithuanian acquired 26 hectares in 1931 with an outlay of 200 mil-réis, with 
 
 - O texto básico em Markdown pode ser integrado com a rica sintaxe do LaTeX para a edição de tabelas, de acordo com os padrões de uma publicação acadêmica. 
 
-- Vamos criar outro arquivo para o exemplo com tabelas. Selecione e copie texto abaixo (inclusive "---" no início e no final do bloco YAML) e cole em uma página em branco do Typora ou outro editor Markdown (novamente: se no Typora, mude primeiro para "Source code mode" em "View" para então selecionar e copiar o texto). Salve este arquivo como paper4.md no mesmo diretório "artigo" de antes.
+- Vamos criar outro arquivo para o exemplo com tabelas. Selecione e copie o texto abaixo (inclusive "---" no início e no final do bloco YAML) e cole em uma página em branco do Typora ou outro editor Markdown (novamente: se no Typora, mude primeiro para "Source code mode" em "View" para então selecionar e copiar o texto). Salve este arquivo como paper4.md no mesmo diretório "artigo" de antes.
 
   ```markdown
   ---
@@ -418,7 +418,7 @@ header-includes: |
   header-includes: |
 	\usepackage{tabularx}
 	\usepackage{tabulary}
-  ---
+---
   
   [Paragraphs of the original article]
   
@@ -517,7 +517,7 @@ Many, of course, were excluded from the record. An unknown number freed in north
 
 #### Formatação final e exemplo
 
-- Outras bibliotecas do LaTeX compatíveis com Pandoc podem ser adicionadas ao header-includes: | no bloco YAML para a formatação final do artigo, de acordo com as opções de formatação desejadas ou recomendadas por um periódico, por exemplo.
+- Outras bibliotecas do LaTeX compatíveis com Pandoc podem ser adicionadas ao header-includes: | no bloco YAML para a formatação final do artigo, de acordo com as opções de formatação desejadas ou recomendadas por um periódico.
 - O exemplo abaixo reproduz os metadados de um working paper, "[Predicting Skills of Runaway Slaves in São Paulo, 1854-1887](http://www.repec.eae.fea.usp.br/documentos/Colistete_15WP.pdf)" (Departamento de Economia, FEA-USP, WP no. 2021-15, 2021). O resultado final da edição com Markdown, Pandoc, LaTeX e Zotero pode ser [conferido aqui](http://www.repec.eae.fea.usp.br/documentos/Colistete_15WP.pdf).
 ```latex
 title: Predicting Skills of Runaway Slaves in São Paulo, 1854-1887
@@ -566,4 +566,4 @@ header-includes: |
 
 #### Concluindo
 
-Em resumo, o uso de Markdown combinado com Pandoc, Zotero e LaTeX é uma opção viável, prática e consistente para edição de artigos e outros trabalhos acadêmicos, constituindo uma alternativa robusta ao uso de editores como Overleaf/LaTeX. 
+Em resumo, o uso de Markdown combinado com Pandoc, Zotero e LaTeX é uma opção prática e consistente para edição de artigos e demais trabalhos acadêmicos, constituindo uma excelente alternativa tanto para quem usa Word na área de humanas quanto para os que utilizam LaTeX em editores como Overleaf. 
