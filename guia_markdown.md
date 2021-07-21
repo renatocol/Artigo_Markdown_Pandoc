@@ -113,7 +113,7 @@ Para adicionar as citações bibliográficas e a bibliografia final é preciso i
 
   $ pandoc paper1.md --citeproc --bibliography ref/biblio.bib -o paper1.pdf 
 
-- Como exemplo adicional, selecione e copie o texto abaixo (inclusive "---" no início e no final do arquivo YAML) e cole em um arquivo em branco do Typora ou outro editor Markdown (lembrando: se usar Typora, mude primeiro para "Source code mode" em "View" para então selecionar e copiar o texto). Salve este arquivo no mesmo diretório "artigo" como paper2.md:
+- Como exemplo adicional, selecione e copie o texto abaixo (inclusive ```---``` no início e no final do arquivo YAML) e cole em um arquivo em branco do Typora ou outro editor Markdown (lembrando: se usar Typora, mude primeiro para "Source code mode" em "View" para então selecionar e copiar o texto). Salve este arquivo no mesmo diretório "artigo" como paper2.md:
 
 ```markdown
 ---
@@ -139,7 +139,7 @@ Anyone who claimed to have the means and desire to make use of the land was give
 
 Além do default do pandoc, outros estilos de citação podem ser definidos facilmente utilizando o repositório de CSL (Citation Style Language) do Zotero. Vários periódicos possuem CSL pronto para ser utilizado, como pode ser visto em https://www.zotero.org/styles.
 
-- Faça o download neste site (https://www.zotero.org/styles) do arquivo .csl desejado e salve na pasta ref, ao lado do arquivo biblio.bib. Nos exemplos a seguir, serão utilizados os estilos de duas revistas, Explorations in Economic History e Hispanic American Historical Review. Os dois arquivos .csl também estão disponíveis na pasta "csl" no GitHub.
+- Faça o download neste site (https://www.zotero.org/styles) do arquivo .csl desejado e salve na pasta ref, ao lado do arquivo biblio.bib. Nos exemplos a seguir, serão utilizados os estilos de duas revistas, Explorations in Economic History e Hispanic American Historical Review. Os dois arquivos .csl também estão disponíveis na pasta "csl" nesta página do GitHub.
 
 - No terminal, complemente o código anterior com ```--csl ref/[...].csl```, onde [...] é o nome/CSL do periódico. Utilizando o arquivo paper2 execute os dois códigos, alternadamente:
 
@@ -190,7 +190,7 @@ Com Markdown, figura e título são editados de maneira simples, com o seguinte 
 
 Pode-se também diferenciar tamanho e tipo de fontes, bem como adicionar Fontes e Notas abaixo do título, como é comum em artigos acadêmicos. Para ilustrar, criaremos um outro arquivo para a edição de figuras. 
 
-- Selecione e copie texto abaixo (inclusive "---" no início e no final do bloco YAML) e cole em um arquivo em branco do Typora ou outro editor Markdown (novamente: se no Typora, mude primeiro para "Source code mode" em "View" para então selecionar e copiar o texto). Salve este arquivo no mesmo diretório "artigo" como paper3.md:
+- Selecione e copie texto abaixo (inclusive ```---``` no início e no final do bloco YAML) e cole em um arquivo em branco do Typora ou outro editor Markdown (novamente: se no Typora, mude primeiro para "Source code mode" em "View" para então selecionar e copiar o texto). Salve este arquivo no mesmo diretório "artigo" como paper3.md:
 
 ```markdown
 ---
@@ -247,7 +247,7 @@ A Lithuanian acquired 26 hectares in 1931 with an outlay of 200 mil-réis, with 
 
 - Além do título, uma figura requer geralmente a citação de suas fontes, a inclusão de notas explicativas e diferenciação na formatação do texto. Aqui aparecem as primeiras combinações de Markdown com a sintaxe do LaTeX (mais sobre esse recurso adiante).
 
-- A título de exemplo, os seguintes comandos do LaTeX são incluídos no primeiro exemplo: ```\newline``` é inserido em [title] para quebrar a linha a fim de incluir "Sources"; ```\small``` diferencia o tamanho da fonte e ```\textit{ }``` adiciona itálico em "Note".
+- A título de exemplo, os seguintes comandos do LaTeX são incluídos no primeiro exemplo: ```\newline``` é inserido em ```[title]``` para quebrar a linha a fim de incluir "Sources"; ```\small``` diferencia o tamanho da fonte e ```\textit{ }``` adiciona itálico em "Note".
 
 
 ```markdown
@@ -279,7 +279,7 @@ A Lithuanian acquired 26 hectares in 1931 with an outlay of 200 mil-réis, with 
 
 - O texto básico em Markdown pode ser integrado com a rica sintaxe do LaTeX para a edição de tabelas, de acordo com os padrões de uma publicação acadêmica. 
 
-- Vamos criar outro arquivo para o exemplo com tabelas. Selecione e copie o texto abaixo (inclusive "---" no início e no final do bloco YAML) e cole em uma página em branco do Typora ou outro editor Markdown (novamente: se no Typora, mude primeiro para "Source code mode" em "View" para então selecionar e copiar o texto). Salve este arquivo como paper4.md no mesmo diretório "artigo" de antes.
+- Vamos criar outro arquivo para o exemplo com tabelas. Selecione e copie o texto abaixo (inclusive ```---``` no início e no final do bloco YAML) e cole em uma página em branco do Typora ou outro editor Markdown (novamente: se no Typora, mude primeiro para "Source code mode" em "View" para então selecionar e copiar o texto). Salve este arquivo como paper4.md no mesmo diretório "artigo" de antes.
 
   ```markdown
   ---
@@ -402,7 +402,7 @@ header-includes: |
 ---
 ```
 
-- Copie e cole ```header-includes: |``` e os pacotes na seção do YAML e substitua a tabela anterior com a formatada com ```tabulary ```no arquivo paper4.md, como indicado abaixo (ou simplesmente copie e cole todo o texto):
+- Copie e cole ```header-includes: |``` e os pacotes na seção do YAML e substitua a tabela anterior com a formatada com ```tabulary ``` no arquivo paper4.md, como indicado abaixo (ou simplesmente copie e cole todo o texto):
 
 ```markdown
 ---
