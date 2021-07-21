@@ -33,7 +33,7 @@ Requer-se a instalação prévia de quatro programas: um editor Markdown, o gere
 
 Dois bons guias gerais sobre Markdown são [Aprenda Markdown](https://blog.da2k.com.br/2015/02/08/aprenda-markdown/) e [Markdown-Guide](https://markdown-guide.readthedocs.io/en/latest/basics.html#). O Typora, editor usado neste tutorial, baseia-se em uma das variantes (flavors) do Markdown puro, o [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/). O [Markdown Reference](https://support.typora.io/Markdown-Reference/) do Typora contém todos os detalhes da sintaxe e é também um bom guia geral da linguagem. Para o Zotero, ver [Quick Start Guide](https://www.zotero.org/support/pt/quick_start_guide) e [Tutorial Zotero 5.0](https://www.iel.unicamp.br/arquivos/biblioteca/TUTORIAL_zotero_v1.pdf).
 
-##### Instalação da biblioteca ZoteroBetterBibTeX no Zotero
+#### Instalação da biblioteca ZoteroBetterBibTeX no Zotero
 
 O plugin [Better BibTeX for Zotero](https://retorque.re/zotero-better-bibtex/) permite integrar o texto Markdown com Zotero por meio de uma "citation key" que é gerada para cada item da bibliografia com o formato @authortitleyear (p. ex., @canabravaAcucarNasAntilhas1981). Os passos a seguir baseiam-se no [tutorial de Simon Lindgren](https://www.simonlindgren.com/notes/2019/11/15/setup-for-writing-in-markdown-citing-with-zotero-and-publishing-with-pandoc):
 
