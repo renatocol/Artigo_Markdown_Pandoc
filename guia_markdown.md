@@ -91,9 +91,9 @@ $(3)$ $\frac{\frac{1}{x}+\frac{1}{y}}{y-z}$
 
 ####  Utilizando pandoc para conversão do arquivo Markdown
 
-O próximo passo é converter o arquivo paper1.md para pdf ou odt/docx. O código do pandoc é simples (pandoc test.md -o test.pdf), sendo executado no terminal de seu computador (geralmente após o símbolo $).
+O próximo passo é converter o arquivo paper1.md para pdf ou odt/docx. O código do pandoc é simples (```pandoc test.md -o test.pdf```), sendo executado no terminal de seu computador (geralmente após o símbolo $).
 
-Para adicionar as citações bibliográficas e a bibliografia final é preciso incluir ainda --citeproc e --bibliography, seguidos do arquivo .bib utilizado. Alternativamente, o elemento --bibliography pode ser incluído nos metadados da seção YAML (bibliography: biblio.bib). Neste guia usaremos --bibliography no comando de linha. Para os detalhes, consultar a documentação do pandoc para [criação de pdf](https://pandoc.org/MANUAL.html#creating-a-pdf) e [outros formatos](https://pandoc.org/MANUAL.html#general-options). Como ilustração, a sequência seguinte converte o arquivo paper1.md para pdf e docx:
+Para adicionar as citações bibliográficas e a bibliografia final é preciso incluir ainda ```--citeproc``` e --bibliography, seguidos do arquivo .bib utilizado. Alternativamente, o elemento --bibliography pode ser incluído nos metadados da seção YAML (bibliography: biblio.bib). Neste guia usaremos --bibliography no comando de linha. Para os detalhes, consultar a documentação do pandoc para [criação de pdf](https://pandoc.org/MANUAL.html#creating-a-pdf) e [outros formatos](https://pandoc.org/MANUAL.html#general-options). Como ilustração, a sequência seguinte converte o arquivo paper1.md para pdf e docx:
 
 - No terminal de seu computador, use $ cd ... para ir ao diretório "artigo", onde o arquivo paper1.md e biblio.bib foram salvos.
 
