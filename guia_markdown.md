@@ -49,9 +49,9 @@ O plugin [Better BibTeX for Zotero](https://retorque.re/zotero-better-bibtex/) p
 
 ####  Começando com um texto básico
 
-A estrutura básica do artigo acadêmico a ser editado é composta por um bloco de metadados [YAML](https://support.typora.io/YAML/) no cabeçalho, seções e bibliografia ao final (notar que o bloco YAML começa com --- e termina com --- ). Um primeiro exemplo é apresentado a seguir. 
+A estrutura básica do artigo acadêmico a ser editado é composta por um bloco de metadados [YAML](https://support.typora.io/YAML/) no cabeçalho, seções e bibliografia ao final (notar que o bloco YAML começa com ```---``` e termina com ```---``` ). Um primeiro exemplo é apresentado a seguir. 
 
-- Selecione, copie e cole toda a estrutura do texto abaixo (inclusive "---" no início e no final dos metadados YAML) em um arquivo em branco do Typora ou outro editor Markdown.
+- Selecione, copie e cole toda a estrutura do texto abaixo (inclusive ```---``` no início e no final dos metadados YAML) em um arquivo em branco do Typora ou outro editor Markdown.
 - Se estiver utilizando o Typora, mude primeiro para "Source code mode" em "View" para então selecionar e copiar o texto.  
 - Em seguida, salve este arquivo com o formato [nome].md no diretório "artigo". Aqui, chamaremos este arquivo Markdown de paper1.md.
 
@@ -93,7 +93,7 @@ $(3)$ $\frac{\frac{1}{x}+\frac{1}{y}}{y-z}$
 
 O próximo passo é converter o arquivo paper1.md para pdf ou odt/docx. O código do pandoc é simples (```pandoc test.md -o test.pdf```), sendo executado no terminal de seu computador (geralmente após o símbolo $).
 
-Para adicionar as citações bibliográficas e a bibliografia final é preciso incluir ainda ```--citeproc``` e --bibliography, seguidos do arquivo .bib utilizado. Alternativamente, o elemento --bibliography pode ser incluído nos metadados da seção YAML (bibliography: biblio.bib). Neste guia usaremos --bibliography no comando de linha. Para os detalhes, consultar a documentação do pandoc para [criação de pdf](https://pandoc.org/MANUAL.html#creating-a-pdf) e [outros formatos](https://pandoc.org/MANUAL.html#general-options). Como ilustração, a sequência seguinte converte o arquivo paper1.md para pdf e docx:
+Para adicionar as citações bibliográficas e a bibliografia final é preciso incluir ainda ```--citeproc``` e ```--bibliography```, seguidos do arquivo .bib utilizado. Alternativamente, o elemento ```--bibliography``` pode ser incluído nos metadados da seção YAML (```bibliography: biblio.bib```). Neste guia usaremos ```--bibliography``` no comando de linha. Para os detalhes, consultar a documentação do pandoc para [criação de pdf](https://pandoc.org/MANUAL.html#creating-a-pdf) e [outros formatos](https://pandoc.org/MANUAL.html#general-options). Como ilustração, a sequência seguinte converte o arquivo paper1.md para pdf e docx:
 
 - No terminal de seu computador, use $ cd ... para ir ao diretório "artigo", onde o arquivo paper1.md e biblio.bib foram salvos.
 
@@ -141,7 +141,7 @@ Além do default do pandoc, outros estilos de citação podem ser definidos faci
 
 - Faça o download neste site (https://www.zotero.org/styles) do arquivo .csl desejado e salve na pasta ref, ao lado do arquivo biblio.bib. Nos exemplos a seguir, serão utilizados os estilos de duas revistas, Explorations in Economic History e Hispanic American Historical Review. Os dois arquivos .csl também estão disponíveis na pasta "csl" no GitHub.
 
-- No terminal, complemente o código anterior com --csl ref/[...].csl, onde [...] é o nome/CSL do periódico. Utilizando o arquivo paper2 execute os dois códigos, alternadamente:
+- No terminal, complemente o código anterior com ```--csl ref/[...].csl```, onde [...] é o nome/CSL do periódico. Utilizando o arquivo paper2 execute os dois códigos, alternadamente:
 
   $ pandoc paper2.md --citeproc --bibliography ref/biblio.bib --csl ref/hispanic-american-historical-review.csl  -o paper2_hahr.pdf
 
@@ -153,7 +153,7 @@ Além do default do pandoc, outros estilos de citação podem ser definidos faci
 
 O bloco com metadados YAML que é inserido no início do documento Markdown contempla os itens principais do "heading" de um artigo acadêmico, como título, autor, data, resumo e palavras-chave. Ver as opções na [documentação do pandoc](https://pandoc.org/MANUAL.html#variables). 
 
-- Para inserir duas linhas após uma entrada no bloco YAML, usar | duas vezes:
+- Para inserir duas linhas após uma entrada no bloco YAML, usar ```|``` duas vezes:
 
 ```yaml
 author: |
@@ -161,7 +161,7 @@ author: |
    | institution
 ```
 
-- O exemplo abaixo acrescenta outras informações do autor e inclui mais itens dos metadados do bloco YAML (thanks e abstract):
+- O exemplo abaixo acrescenta outras informações do autor e inclui mais itens dos metadados do bloco YAML (```thanks``` e ```abstract```):
 
 ```yaml
 ---
@@ -247,7 +247,7 @@ A Lithuanian acquired 26 hectares in 1931 with an outlay of 200 mil-réis, with 
 
 - Além do título, uma figura requer geralmente a citação de suas fontes, a inclusão de notas explicativas e diferenciação na formatação do texto. Aqui aparecem as primeiras combinações de Markdown com a sintaxe do LaTeX (mais sobre esse recurso adiante).
 
-- A título de exemplo, os seguintes comandos do LaTeX são incluídos no primeiro exemplo: \newline é inserido em [title] para quebrar a linha a fim de incluir "Sources"; \small diferencia o tamanho da fonte e \textit{ } adiciona itálico em "Note".
+- A título de exemplo, os seguintes comandos do LaTeX são incluídos no primeiro exemplo: ```\newline``` é inserido em [title] para quebrar a linha a fim de incluir "Sources"; ```\small``` diferencia o tamanho da fonte e ```\textit{ }``` adiciona itálico em "Note".
 
 
 ```markdown
@@ -255,7 +255,7 @@ A Lithuanian acquired 26 hectares in 1931 with an outlay of 200 mil-réis, with 
 ```
 
 - Na Figure 1 do arquivo paper3.md, adicione o seguinte texto em "Note": "Key: i, Brazilian; 2, Austrian; 3, German; 4, Estonian; 5, Czechoslovakian; 6, Italian; 7, Russian; 8, Hungarian; 9, Lithuanian; 10, Japanese; 11, unsold lot." 
-- Inclua também \newline, \small e \textit { } conforme a estrutura acima. Assim:
+- Inclua também ```\newline```, ```\small``` e ```\textit { }``` conforme a estrutura acima. Assim:
 
 ```markdown
 ![Ilustrations of the mixture of nationalities at Barão de Antonina. \newline \small \textit{Note:} Key: 1, Brazilian; 2, Austrian; 3, German; 4, Estonian; 5, Czechoslovakian; 6, Italian; 7, Russian; 8, Hungarian; 9, Lithuanian; 10, Japanese; 11, unsold lot.](fig_monbeig1.png)
@@ -265,7 +265,7 @@ A Lithuanian acquired 26 hectares in 1931 with an outlay of 200 mil-réis, with 
 
   $ pandoc paper3.md --citeproc --bibliography ref/biblio.bib --csl ref/the-economic-history-review.csl  -o paper3.pdf
 
-- Pela mesma lógica, pode-se incluir uma nova linha com a fonte da figura. No exemplo, acrescente-a logo após o título principal de Figure 1: \newline \small \textit{Source:} Monbeig, "Colonial Nucleus," p. 268. Também é possível configurar o tamanho da figura  com {width=xx%}, conforme abaixo:
+- Pela mesma lógica, pode-se incluir uma nova linha com a fonte da figura. No exemplo, acrescente-a logo após o título principal de Figure 1: ```\newline \small \textit{Source:} Monbeig, "Colonial Nucleus," p. 268```. Também é possível configurar o tamanho da figura  com ```{width=xx%}```, conforme abaixo:
 
   ```markdown
   ![Ilustrations of the mixture of nationalities at Barão de Antonina. \newline \small \textit{Source:} Monbeig, "Colonial Nucleus," p. 268. \newline \small \textit{Note:} Key: i, Brazilian; 2, Austrian; 3, German; 4, Estonian; 5, Czechoslovakian; 6, Italian; 7, Russian; 8, Hungarian; 9, Lithuanian; 10, Japanese; II, unsold lot.](fig_monbeig1.png){width=80%}
@@ -379,11 +379,11 @@ A Lithuanian acquired 26 hectares in 1931 with an outlay of 200 mil-réis, with 
 
   $ pandoc paper4.md --citeproc --bibliography ref/biblio.bib --csl ref/hispanic-american-historical-review.csl  -o paper4.pdf
 
-- Note que o pandoc incorpora o ambiente tabular, que é o default do LaTeX para a criação de tabelas. Observe também que multicolumn{4}{l}{\textit{Source:} FO 84/1244, PRO.} é suficiente para criar o campo da Fonte no rodapé da tabela. 
+- Note que o pandoc incorpora o ambiente ```tabular```, que é o default do LaTeX para a criação de tabelas. Observe também que ```multicolumn{4}{l}{\textit{Source:} FO 84/1244, PRO.}``` é suficiente para criar o campo da Fonte no rodapé da tabela. 
 
-- Além de tabular como default, outros pacotes de tabelas do LaTeX, como tabulary e tabularx, são compatíveis com Markdown e pandoc. Para tanto, basta adicionar o ambiente "header-includes: |" aos metadados do YAML do documento Markdown, acompanhado de \usepackage{ } para cada um dos pacotes, tal como no preâmbulo do LaTeX. 
+- Além de ```tabular``` como default, outros pacotes de tabelas do LaTeX, como ```tabulary``` e ```tabularx```, são compatíveis com Markdown e pandoc. Para tanto, basta adicionar o ambiente ```header-includes: |``` aos metadados do YAML do documento Markdown, acompanhado de ```\usepackage{ }``` para cada um dos pacotes, tal como no preâmbulo do LaTeX. 
 
-- Por exemplo, no caso de tabularx e tabulary, o cabeçalho YAML é editado desta forma:
+- Por exemplo, no caso de ```tabularx``` e ```tabulary``` o cabeçalho YAML é editado desta forma:
 
 ```yaml
 ---
@@ -402,7 +402,7 @@ header-includes: |
 ---
 ```
 
-- Copie e cole header-includes: | e os pacotes na seção do YAML e substitua a tabela anterior com a formatada com tabulary no arquivo paper4.md, como indicado abaixo (ou simplesmente copie e cole todo o texto):
+- Copie e cole ```header-includes: |``` e os pacotes na seção do YAML e substitua a tabela anterior com a formatada com ```tabulary ```no arquivo paper4.md, como indicado abaixo (ou simplesmente copie e cole todo o texto):
 
 ```markdown
 ---
@@ -457,7 +457,7 @@ $ pandoc paper4.md --citeproc --bibliography ref/biblio.bib --csl ref/hispanic-a
 
 #### Outros elementos dos metadados
 
-- Os metadados da seção YAML admitem outras opções para a formatação final do documento em LaTeX, tais como documentclass, papersize e geometry. Ver abaixo:
+- Os metadados da seção YAML admitem outras opções para a formatação final do documento em LaTeX, tais como ```documentclass```, ```papersize``` e ```geometry```. Ver abaixo:
 ```markdown
 ---
 title: Neither Slave nor Free. The Emancipados of Brazil, 1818-1868
@@ -511,14 +511,14 @@ Many, of course, were excluded from the record. An unknown number freed in north
   (...) 
 ```
 
-- Copie e cole os valores de documentclass, papersize e geometry em paper4.md. Veja o resultado copiando e executando o código no terminal:
+- Copie e cole os valores de ```documentclass```, ```papersize``` e ```geometry``` em paper4.md. Veja o resultado copiando e executando o código no terminal:
 
 ​     $ pandoc paper4.md --citeproc --bibliography ref/biblio.bib --csl ref/the-economic-history-review.csl  -o paper4.pdf
 
 #### Formatação final e exemplo
 
-- Outras bibliotecas do LaTeX compatíveis com Pandoc podem ser adicionadas ao header-includes: | no bloco YAML para a formatação final do artigo, de acordo com as opções de formatação desejadas ou recomendadas por um periódico.
-- O exemplo abaixo reproduz os metadados de um working paper, "[Predicting Skills of Runaway Slaves in São Paulo, 1854-1887](http://www.repec.eae.fea.usp.br/documentos/Colistete_15WP.pdf)" (Departamento de Economia, FEA-USP, WP no. 2021-15, 2021). O resultado final da edição com Markdown, Pandoc, LaTeX e Zotero pode ser [conferido aqui](http://www.repec.eae.fea.usp.br/documentos/Colistete_15WP.pdf).
+- Outras bibliotecas do LaTeX compatíveis com Pandoc podem ser adicionadas ao ```header-includes: |``` no bloco YAML para a formatação final do artigo, de acordo com as opções de formatação desejadas ou recomendadas por um periódico.
+- O exemplo abaixo reproduz os metadados de um working paper, "[Predicting Skills of Runaway Slaves in São Paulo, 1854-1887](http://www.repec.eae.fea.usp.br/documentos/Colistete_15WP.pdf)" (Departamento de Economia, FEA-USP, WP no. 2021-15, 2021). O resultado final da edição com Markdown, pandoc, LaTeX e Zotero pode ser [conferido aqui](http://www.repec.eae.fea.usp.br/documentos/Colistete_15WP.pdf).
 ```latex
 title: Predicting Skills of Runaway Slaves in São Paulo, 1854-1887
 author: |
