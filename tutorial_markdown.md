@@ -5,7 +5,7 @@
 *Última atualização: 14/7/2021*
 
 
-Este tutorial apresenta os passos básicos para a preparação de artigos acadêmicos utilizando [Markdown](https://en.wikipedia.org/wiki/Markdown), uma sintaxe simples e versátil de formatação de textos com amplo uso em webpages, editores de programação, GitHub/GitLab e Jupyter Notebook. Por meio do [pandoc](https://pandoc.org/MANUAL.html), o texto básico em Markdown é convertido em pdf com todas as funcionalidades do [LaTeX](https://www.latex-project.org/), além de outros formatos como odt e docx. O workflow é integrado com o gerenciador de bibliotecas [Zotero](https://www.zotero.org/). O sistema é uma alternativa à redação de textos acadêmicos com o Word ou editores como Overleaf, utilizando LaTeX.
+Este tutorial apresenta os passos básicos para a preparação de artigos acadêmicos utilizando [Markdown](https://en.wikipedia.org/wiki/Markdown), uma sintaxe simples e versátil de formatação de textos com amplo uso em webpages, editores de programação, GitHub/GitLab e Jupyter Notebook. Por meio do [pandoc](https://pandoc.org/MANUAL.html), o texto básico em Markdown é convertido em pdf com todas as funcionalidades do [LaTeX](https://www.latex-project.org/), além de outros formatos como odt e docx. O workflow é integrado com o gerenciador de bibliografia [Zotero](https://www.zotero.org/). O sistema é uma alternativa à redação de textos acadêmicos com o Word ou editores como Overleaf, utilizando LaTeX.
 
 #### Instalações necessárias
 
