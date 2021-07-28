@@ -31,7 +31,7 @@ Requer-se a instalação prévia de quatro programas: um editor Markdown, o gere
 
   Instalar de acordo com as instruções: https://docs.anaconda.com/anaconda/installMarkdown
 
-Dois bons guias gerais sobre Markdown são [Aprenda Markdown](https://blog.da2k.com.br/2015/02/08/aprenda-markdown/) e [Markdown-Guide](https://markdown-guide.readthedocs.io/en/latest/basics.html#). O Typora, editor usado neste tutorial, baseia-se em uma das variantes (flavors) do Markdown puro, o [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/). O [Markdown Reference](https://support.typora.io/Markdown-Reference/) do Typora contém todos os detalhes da sintaxe e é também um bom guia geral da linguagem. Para o Zotero, ver [Quick Start Guide](https://www.zotero.org/support/pt/quick_start_guide) e [Tutorial Zotero 5.0](https://www.iel.unicamp.br/arquivos/biblioteca/TUTORIAL_zotero_v1.pdf).
+Dois bons guias gerais sobre Markdown são o [Markdown-Guide](https://markdown-guide.readthedocs.io/en/latest/basics.html) e a [Introdução do Programming Historian](https://programminghistorian.org/pt/licoes/introducao-ao-markdown). O Typora, editor usado neste tutorial, baseia-se em uma das variantes (flavors) do Markdown puro, o [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/). O [Markdown Reference](https://support.typora.io/Markdown-Reference/) do Typora contém todos os detalhes da sintaxe e é também um bom guia geral da linguagem. Para o Zotero, ver [Quick Start Guide](https://www.zotero.org/support/pt/quick_start_guide) e [Tutorial Zotero 5.0](https://www.iel.unicamp.br/arquivos/biblioteca/TUTORIAL_zotero_v1.pdf).
 
 #### Instalação da biblioteca ZoteroBetterBibTeX no Zotero
 
