@@ -520,6 +520,7 @@ Many, of course, were excluded from the record. An unknown number freed in north
 - Outras bibliotecas do LaTeX compatíveis com Pandoc podem ser adicionadas ao ```header-includes: |``` no bloco YAML para a formatação final do artigo, de acordo com as opções de formatação desejadas ou recomendadas por um periódico.
 - O exemplo abaixo reproduz os metadados de um working paper, "[Predicting Skills of Runaway Slaves in São Paulo, 1854-1887](http://www.repec.eae.fea.usp.br/documentos/Colistete_15WP.pdf)" (Departamento de Economia, FEA-USP, WP no. 2021-15, 2021). O resultado final da edição com Markdown, pandoc, LaTeX e Zotero pode ser [conferido aqui](http://www.repec.eae.fea.usp.br/documentos/Colistete_15WP.pdf).
 ```latex
+---
 title: Predicting Skills of Runaway Slaves in São Paulo, 1854-1887
 author: |
   | Renato P. Colistete
@@ -562,6 +563,7 @@ header-includes: |
     \setlength{\footnotemargin}{3mm}
     \setlength{\skip\footins}{3mm}
 	\setlength{\footnotesep}{3mm}
+---
 ```
 
 #### Concluindo
