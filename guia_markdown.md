@@ -1,11 +1,11 @@
-## Guia para edição de artigo acadêmico com Markdown, Pandoc, LaTeX e Zotero
+## Tutorial para edição de artigo acadêmico com Markdown, Pandoc, LaTeX e Zotero
 
 ### Autor: Renato Perim Colistete, FEA-USP
 
 *Última atualização: 14/7/2021*
 
 
-Este guia apresenta os passos básicos para a preparação de artigos acadêmicos utilizando [Markdown](https://en.wikipedia.org/wiki/Markdown), uma sintaxe simples e versátil de formatação de textos com amplo uso em webpages, editores de programação, GitHub/GitLab e Jupyter Notebook. Por meio do [pandoc](https://pandoc.org/MANUAL.html), o texto básico em Markdown é convertido em pdf com todas as funcionalidades do [LaTeX](https://www.latex-project.org/), além de outros formatos como odt e docx. O workflow é integrado com o gerenciador de bibliotecas [Zotero](https://www.zotero.org/). O sistema é uma alternativa tanto para a redação de textos com Word quanto em LaTeX utilizando editores como Overleaf. 
+Este tutorial apresenta os passos básicos para a preparação de artigos acadêmicos utilizando [Markdown](https://en.wikipedia.org/wiki/Markdown), uma sintaxe simples e versátil de formatação de textos com amplo uso em webpages, editores de programação, GitHub/GitLab e Jupyter Notebook. Por meio do [pandoc](https://pandoc.org/MANUAL.html), o texto básico em Markdown é convertido em pdf com todas as funcionalidades do [LaTeX](https://www.latex-project.org/), além de outros formatos como odt e docx. O workflow é integrado com o gerenciador de bibliotecas [Zotero](https://www.zotero.org/). O sistema é uma alternativa para a redação de textos tanto com o Word quanto em LaTeX, utilizando editores como Overleaf. 
 
 #### Instalações necessárias
 
