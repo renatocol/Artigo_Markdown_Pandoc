@@ -239,7 +239,7 @@ A Lithuanian acquired 26 hectares in 1931 with an outlay of 200 mil-réis, with 
   ![Wheat harvest in Barão de Antonina](fig_monbeig2.png)
   ```
 
-- Baixe as duas figuras disponíveis na pasta "figuras" deste tutorial no GitHub e salve na sua pasta "artigo", como nas vezes anteriores. Copie o cole o código abaixo no terminal e confira o resultado:
+- Baixe as duas figuras disponíveis na pasta "figuras" deste tutorial no GitHub e salve na sua pasta "artigo", como nas vezes anteriores. Copie e cole o código abaixo no terminal e confira o resultado:
 
   $ pandoc paper3.md --citeproc --bibliography ref/biblio.bib --csl ref/hispanic-american-historical-review.csl  -o paper3.pdf
 
