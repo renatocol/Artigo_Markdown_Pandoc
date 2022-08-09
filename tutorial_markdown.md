@@ -107,7 +107,7 @@ Para adicionar as citações bibliográficas e a bibliografia final é preciso i
 
   $ pandoc paper1.md --citeproc --bibliography biblio.bib -o paper1.docx
 
-- Verifique o arquivo paper1.pdf no seu diretório "artigo". Caso as instalações dos programas necessários estiverem em ordem, o arquivo em pdf terá a estrutura do Markdown copiado e colado na seção anterior, tal como o que se encontra na pasta "exemplos" deste tutorial no GitHub (ver paper1.pdf).
+- Verifique o arquivo paper1.pdf no seu diretório "artigo". Caso as instalações dos programas necessários estejam em ordem, o arquivo em pdf terá a estrutura do Markdown copiado e colado na seção anterior, tal como o que se encontra na pasta "exemplos" deste tutorial no GitHub (ver paper1.pdf).
 
 - É mais prático manter o arquivo .bib (aqui, biblio.bib) em uma pasta separada dentro do diretório "artigo" que contém o arquivo Markdown. Para isso, crie uma nova pasta (p.ex. com o nome ref) dentro do diretório "artigo" e transfira biblio.bib para ela. O código no terminal agora deve incluir uma barra após ref (isto é, ```ref/``` ): 
 
